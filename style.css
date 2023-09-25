@@ -3,6 +3,7 @@ body{
     padding: 0;
     color: white;
     background-color: rgb(54, 54, 54);
+    height: 100%;
 }
 nav{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -10,7 +11,7 @@ nav{
     margin-top: 50px;
 }
 main{
-    /* background-color: aqua; */
+    border: 2px solid black;
     position: absolute;
     left: 0;
     right: 0;
@@ -21,7 +22,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
+    
 }
 input{
     border: none;
@@ -30,19 +32,57 @@ input{
     max-width: 150px;
     text-align: left;
     border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
 }
-button{
+#calcular{
+    color: white;
     cursor: pointer;
     border: none;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
-    background-color: rgb(52, 180, 180);
+    background-color: rgb(32, 124, 59);
     border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
 }
-button:hover{
-    background-color: rgb(63, 235, 235);
+#calcular:hover{
+    background-color: rgb(34, 194, 82);
     transition: all 500ms;
 }
-button:not(:hover){
+#calcular:not(:hover){
     transition: all 500ms;
+}
+#limpar{
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(124, 32, 32);
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+#limpar:hover{
+    background-color: rgb(211, 20, 20);
+    transition: all 500ms;
+}
+#limpar:not(:hover){
+    transition: all 500ms;
+}
+#aprovado, #reprovado{
+    position: relative;
+}
+hr{
+    margin-top: 25px;
+}
+footer{
+    background-color: rgb(37, 37, 37);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }

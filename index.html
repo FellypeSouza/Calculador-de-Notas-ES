@@ -8,18 +8,28 @@
 </head>
 <body>
     <nav>
-        <h1>Calculadora de Notas - Ensino Superior, Média 7</h1>
+        <h1>Calculadora de Notas - Ensino Superior</h1>
         <h3>Em Desenvolvimento por Fellype Souza, Desenvolvedor Fullstack</h3>
     </nav>
     <main>
+        <input type="number" name="media" id="input_media" placeholder="Insira a média">
         <input id="np1" type="number" placeholder="Insira a nota da NP1" minlength="1" maxlength='4'>
         <input id="np2" type="number" placeholder="Insira a nota da NP2">
         <input id="pim" type="number" placeholder="Insira a nota do Pim">
-        <button id="calcular">Calcular</button>
+        <div>
+            <button id="calcular">Calcular</button>
+            <button id="limpar" onclick="limpar()">Limpar</button>
+        </div>
+        <hr width="200px">
         <h2 id="aprovado"> </h2>
         <h2 id="reprovado"> </h2>
-        <h2 id="nota_final"></h2>
+        <h2 id="nota_final"> </h2>
+        <aside>
+        </aside>
     </main>
+    <footer>
+        <h4>© Fellype Souza, 2023</h4>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
